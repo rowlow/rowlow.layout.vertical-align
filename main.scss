@@ -1,0 +1,33 @@
+@import 'settings';
+@import 'mixins';
+@import 'functions';
+
+
+// .vertical-align-helper{
+// 	display: table;
+// 	width: 100%;
+// 	> *[class*=vertical-align--]{
+// 		display: table-cell;
+// 	}
+// }
+
+.#{$rowlow-vertical-align-namespace}vertical-align-helper{
+	&:before{
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+		margin-left: -5px;
+	}
+
+	> *[class*=#{$rowlow-vertical-align-namespace}vertical-align--]{
+		display: inline-block;
+		width: 100%;
+	}
+}
+
+@each $breakpoint-name, $breakpoint-value in $rowlow-breakpoints {
+	@media (min-width: $breakpoint-value + px) {
+		@include rowlow-vertical-align($breakpoint-name);
+	}
+}
