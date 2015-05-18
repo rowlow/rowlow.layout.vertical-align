@@ -1,0 +1,27 @@
+{
+  "name": "rowlow.layout.vertical-align",
+  "version": "0.1.0",
+  "homepage": "http://rowlow.github.io",
+  "authors": [
+    "Roland Lösslein <info@weaintplastic.com>"
+  ],
+  "description": "A module to allow vertical alignment for any DOM element in ROW LOW framework",
+  "main": "main.scss",
+  "keywords": [
+    "vertical",
+    "align",
+    "rowlow"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "rowlow.settings.default": "~0.1.2",
+    "rowlow.utils.breakpoints": "~0.1.0"
+  }
+}

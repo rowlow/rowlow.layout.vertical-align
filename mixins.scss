@@ -1,0 +1,5 @@
+@mixin rowlow-vertical-align($breakpoint){
+	.#{$rowlow-vertical-align-namespace}vertical-align--#{$breakpoint}--top{ vertical-align: top; }
+	.#{$rowlow-vertical-align-namespace}vertical-align--#{$breakpoint}--middle{ vertical-align: middle; }
+	.#{$rowlow-vertical-align-namespace}vertical-align--#{$breakpoint}--bottom{ vertical-align: bottom; }
+}
