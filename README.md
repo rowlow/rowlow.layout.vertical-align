@@ -1,6 +1,6 @@
 # rowlow.layout.vertical-align
 
-This module adds functionality to vertical align not just inline or table elements. A vertical align wrapper in combinations with the ```rowlow.layout.layer-group```module helps you to vertically align things with an unknown height.
+This module adds functionality to vertical align not just inline or table elements but also block elements with an unknown height.
 
 You can take control of the vertical alignment for any responsive breakpoint separately.
 
@@ -46,7 +46,7 @@ You can take control of the vertical alignment for any responsive breakpoint sep
     </table>
 
 
-    <div class="vertical-align-helper layer-group" style="height: 200px">
+    <div class="vertical-align-helper" style="height: 200px">
         <div class="vertical-align--s--middle text-align--s--center">
             [...]
         </div>
